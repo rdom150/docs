@@ -10,7 +10,7 @@ Ce guide explique comment déployer l'Agent GLPI sur des postes Windows à l'aid
 - **Fichier d'installation**: téléchargez l'installateur MSI de l'Agent GLPI compatible avec votre version de GLPI.
 - **Partage réseau**: hébergez le MSI sur un partage accessible en lecture par les ordinateurs cibles (ex: `\\srv\\deploiement\\GLPI-Agent\\glpi-agent-x.y.z-x64.msi`).
 - **GLPI**: activez la fonction d'inventaire côté GLPI pour recevoir les données.
-![Activation de l'inventaire dans GLPI](../assets/glpi/ImageGPOGLPI2.png)
+![Activation de l'inventaire dans GLPI](../assets/glpi/ImageGPOGLPI1.png)
 - **Droits AD**: permissions pour créer/éditer des GPO et lier à l'OU concernée.
 
 ---
@@ -106,4 +106,8 @@ http://127.0.0.1:62354
 
 ---
 
+#### Références
+- Source: `https://docs.ldurand-it.fr/fr/Services/GLPI/glpigpo`
+- Tutoriel associé: `https://www.it-connect.fr/tuto-installer-configurer-gpo-agent-glpi-windows/`
 
+> Bien joué ✔️ En suivant ces étapes, vous pouvez déployer l’Agent GLPI via GPO et centraliser vos inventaires dans GLPI.
