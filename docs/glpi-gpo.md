@@ -20,7 +20,7 @@ Ce guide explique comment déployer l'Agent GLPI sur des postes Windows à l'aid
 2. Copiez le fichier dans le partage réseau (chemin UNC) accessible aux ordinateurs.
 
 > Astuce: utilisez un chemin UNC stable (pas de lecteur mappé), sinon l'installation au démarrage échouera.
-![Placement du MSI sur un partage réseau](../assets/glpi/ImageGPOGLPI1.png)
+![Placement du MSI sur un partage réseau](../assets/glpi/ImageGPOGLPI2.png)
 
 #### Étape 2 — Créer la GPO « AgentGLPI »
 1. Ouvrez la console Gestion de stratégie de groupe (GPMC).
@@ -107,7 +107,7 @@ http://127.0.0.1:62354
 ---
 
 #### Références
-- Source: `https://docs.ldurand-it.fr/fr/Services/GLPI/glpigpo`
-- Tutoriel associé: `https://www.it-connect.fr/tuto-installer-configurer-gpo-agent-glpi-windows/`
+
+
 
 > Bien joué ✔️ En suivant ces étapes, vous pouvez déployer l’Agent GLPI via GPO et centraliser vos inventaires dans GLPI.
