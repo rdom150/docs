@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fond -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Titre -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    Configuration DNS
+  </text>
+  
+  <!-- Interface Configuration DNS -->
+  <rect x="50" y="80" width="700" height="480" fill="white" stroke="#dee2e6" stroke-width="2" rx="8"/>
+  
+  <!-- Barre de titre -->
+  <rect x="50" y="80" width="700" height="30" fill="#0078d4"/>
+  <text x="70" y="100" font-family="Arial, sans-serif" font-size="14" fill="white">Configuration des options DNS</text>
+  
+  <!-- Assistant -->
+  <rect x="100" y="150" width="600" height="350" fill="white" stroke="#0078d4" stroke-width="2" rx="8"/>
+  
+  <text x="400" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">
+    Options DNS
+  </text>
+  
+  <!-- Configuration DNS -->
+  <rect x="130" y="200" width="540" height="200" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+  
+  <!-- Délégation DNS -->
+  <rect x="150" y="220" width="500" height="40" fill="#fff3cd" stroke="#ffc107" stroke-width="1"/>
+  <rect x="160" y="230" width="15" height="15" fill="#dc3545"/>
+  <text x="185" y="242" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#856404">
+    Créer une délégation DNS (recommandé)
+  </text>
+  
+  <!-- Pas de délégation -->
+  <rect x="150" y="280" width="500" height="40" fill="#d4edda" stroke="#c3e6cb" stroke-width="2"/>
+  <rect x="160" y="290" width="15" height="15" fill="#28a745"/>
+  <text x="185" y="302" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#155724">
+    Pas de délégation DNS (pour un nouveau domaine)
+  </text>
+  
+  <!-- Informations DNS -->
+  <rect x="150" y="340" width="500" height="50" fill="#d1ecf1" stroke="#bee5eb" stroke-width="1"/>
+  <text x="170" y="360" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0c5460">
+    ℹ️ Configuration DNS automatique :
+  </text>
+  <text x="170" y="380" font-family="Arial, sans-serif" font-size="11" fill="#0c5460">
+    • Le serveur DNS sera installé automatiquement sur ce contrôleur de domaine
+  </text>
+  
+  <!-- Chemins d'accès -->
+  <rect x="130" y="420" width="540" height="60" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+  <text x="150" y="445" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#495057">
+    Chemins d'accès par défaut :
+  </text>
+  <text x="150" y="465" font-family="Arial, sans-serif" font-size="11" fill="#495057">
+    • Base de données AD : C:\Windows\NTDS
+  </text>
+  <text x="150" y="480" font-family="Arial, sans-serif" font-size="11" fill="#495057">
+    • Fichiers journaux : C:\Windows\NTDS
+  </text>
+  
+  <!-- Boutons -->
+  <rect x="300" y="520" width="80" height="30" fill="#6c757d" rx="5"/>
+  <text x="340" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+    Précédent
+  </text>
+  
+  <rect x="400" y="520" width="80" height="30" fill="#28a745" rx="5"/>
+  <text x="440" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+    Suivant
+  </text>
+  
+  <rect x="500" y="520" width="80" height="30" fill="#dc3545" rx="5"/>
+  <text x="540" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+    Annuler
+  </text>
+</svg>

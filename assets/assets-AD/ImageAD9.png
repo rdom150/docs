@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fond -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Titre -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    Promouvoir en contrôleur de domaine
+  </text>
+  
+  <!-- Interface Installation terminée -->
+  <rect x="50" y="80" width="700" height="480" fill="white" stroke="#dee2e6" stroke-width="2" rx="8"/>
+  
+  <!-- Barre de titre -->
+  <rect x="50" y="80" width="700" height="30" fill="#28a745"/>
+  <text x="70" y="100" font-family="Arial, sans-serif" font-size="14" fill="white">Installation terminée - Active Directory Domain Services</text>
+  
+  <!-- Message de réussite -->
+  <rect x="100" y="150" width="600" height="200" fill="#d4edda" stroke="#c3e6cb" stroke-width="2" rx="8"/>
+  
+  <text x="400" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#155724">
+    ✅ Installation réussie
+  </text>
+  
+  <text x="400" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#155724">
+    Active Directory Domain Services a été installé avec succès
+  </text>
+  
+  <!-- Lien bleu pour promouvoir -->
+  <rect x="200" y="240" width="400" height="40" fill="#0078d4" rx="5"/>
+  <text x="400" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+    🔗 Promouvoir ce serveur en contrôleur de domaine
+  </text>
+  
+  <!-- Instructions -->
+  <rect x="100" y="370" width="600" height="120" fill="#d1ecf1" stroke="#bee5eb" stroke-width="1"/>
+  <text x="120" y="395" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0c5460">
+    📋 Prochaines étapes :
+  </text>
+  <text x="120" y="420" font-family="Arial, sans-serif" font-size="12" fill="#0c5460">
+    1. Cliquez sur le lien bleu ci-dessus pour lancer l'assistant de configuration
+  </text>
+  <text x="120" y="440" font-family="Arial, sans-serif" font-size="12" fill="#0c5460">
+    2. Configurez votre nouveau domaine Active Directory
+  </text>
+  <text x="120" y="460" font-family="Arial, sans-serif" font-size="12" fill="#0c5460">
+    3. Définissez le nom de domaine et les options de configuration
+  </text>
+  <text x="120" y="480" font-family="Arial, sans-serif" font-size="12" fill="#0c5460">
+    4. Attendez la promotion complète du contrôleur de domaine
+  </text>
+  
+  <!-- Boutons -->
+  <rect x="350" y="510" width="100" height="30" fill="#28a745" rx="5"/>
+  <text x="400" y="530" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+    Fermer
+  </text>
+</svg>

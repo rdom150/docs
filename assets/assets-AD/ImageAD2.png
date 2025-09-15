@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fond -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Titre -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    Déverrouillage VM PVE avec noVNC
+  </text>
+  
+  <!-- Interface noVNC -->
+  <rect x="50" y="80" width="700" height="480" fill="white" stroke="#dee2e6" stroke-width="2" rx="8"/>
+  
+  <!-- Barre de titre noVNC -->
+  <rect x="50" y="80" width="700" height="30" fill="#343a40"/>
+  <text x="70" y="100" font-family="Arial, sans-serif" font-size="14" fill="white">noVNC - Console VM Windows Server</text>
+  
+  <!-- Barre latérale noVNC -->
+  <rect x="50" y="130" width="60" height="400" fill="#6c757d"/>
+  
+  <!-- Chevron pour déployer -->
+  <rect x="55" y="140" width="50" height="20" fill="#495057" rx="3"/>
+  <text x="80" y="153" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+    ▼
+  </text>
+  <text x="80" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">
+    Déployer
+  </text>
+  
+  <!-- Icônes de la barre latérale -->
+  <rect x="60" y="200" width="40" height="40" fill="#28a745" rx="5"/>
+  <text x="80" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="white">
+    A
+  </text>
+  
+  <rect x="60" y="250" width="40" height="40" fill="#dc3545" rx="5"/>
+  <text x="80" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">
+    CTRL
+  </text>
+  
+  <rect x="60" y="300" width="40" height="40" fill="#ffc107" rx="5"/>
+  <text x="80" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">
+    ALT
+  </text>
+  
+  <rect x="60" y="350" width="40" height="40" fill="#17a2b8" rx="5"/>
+  <text x="80" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">
+    DEL
+  </text>
+  
+  <!-- Icône des trois touches -->
+  <rect x="55" y="420" width="50" height="30" fill="#6f42c1" rx="3"/>
+  <text x="80" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">
+    CTRL+ALT+DEL
+  </text>
+  
+  <!-- Zone principale -->
+  <rect x="120" y="130" width="630" height="400" fill="#212529"/>
+  
+  <!-- Écran de déverrouillage Windows -->
+  <rect x="200" y="200" width="400" height="250" fill="white" stroke="#dee2e6" stroke-width="2" rx="8"/>
+  
+  <rect x="200" y="200" width="400" height="50" fill="#0078d4" rx="8"/>
+  <text x="400" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="white">
+    Windows Server 2022
+  </text>
+  
+  <!-- Avatar utilisateur -->
+  <circle cx="400" cy="300" r="30" fill="#e9ecef" stroke="#ced4da" stroke-width="2"/>
+  <text x="400" y="307" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#6c757d">
+    👤
+  </text>
+  
+  <!-- Champ de mot de passe -->
+  <text x="400" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#495057">
+    Administrateur
+  </text>
+  
+  <rect x="320" y="360" width="160" height="25" fill="white" stroke="#ced4da" stroke-width="1" rx="3"/>
+  <text x="330" y="377" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">
+    Mot de passe
+  </text>
+  
+  <!-- Bouton de connexion -->
+  <rect x="350" y="400" width="100" height="30" fill="#0078d4" rx="5"/>
+  <text x="400" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+    Connexion
+  </text>
+  
+  <!-- Instructions -->
+  <rect x="120" y="460" width="630" height="60" fill="#d1ecf1" stroke="#bee5eb" stroke-width="1"/>
+  <text x="140" y="480" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0c5460">
+    Instructions de déverrouillage :
+  </text>
+  <text x="140" y="500" font-family="Arial, sans-serif" font-size="11" fill="#0c5460">
+    1. Cliquez sur le chevron pour déployer la barre latérale
+  </text>
+  <text x="140" y="515" font-family="Arial, sans-serif" font-size="11" fill="#0c5460">
+    2. Cliquez sur l'icône "A" puis sur "CTRL+ALT+DEL" pour déverrouiller
+  </text>
+</svg>

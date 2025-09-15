@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fond -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Titre -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    Gestionnaire de serveur Windows Server 2022
+  </text>
+  
+  <!-- Interface Gestionnaire de serveur -->
+  <rect x="50" y="80" width="700" height="480" fill="white" stroke="#dee2e6" stroke-width="2" rx="8"/>
+  
+  <!-- Barre de titre -->
+  <rect x="50" y="80" width="700" height="30" fill="#0078d4"/>
+  <text x="70" y="100" font-family="Arial, sans-serif" font-size="14" fill="white">Gestionnaire de serveur - WIN-SRV-01</text>
+  
+  <!-- Menu principal -->
+  <rect x="70" y="130" width="660" height="40" fill="#e9ecef"/>
+  <text x="90" y="150" font-family="Arial, sans-serif" font-size="12" fill="#495057">Tableau de bord</text>
+  <text x="200" y="150" font-family="Arial, sans-serif" font-size="12" fill="#495057">Serveurs locaux</text>
+  <text x="320" y="150" font-family="Arial, sans-serif" font-size="12" fill="#495057">Tous les serveurs</text>
+  <text x="450" y="150" font-family="Arial, sans-serif" font-size="12" fill="#495057">Gestionnaire de fichiers</text>
+  <text x="600" y="150" font-family="Arial, sans-serif" font-size="12" fill="#0078d4">Gérer</text>
+  
+  <!-- Panneau principal -->
+  <rect x="70" y="180" width="660" height="350" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+  
+  <!-- Titre du panneau -->
+  <text x="90" y="210" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2c3e50">
+    Serveur local - WIN-SRV-01
+  </text>
+  
+  <!-- Cartes d'information -->
+  <!-- Carte 1 - Serveur -->
+  <rect x="90" y="230" width="200" height="120" fill="white" stroke="#dee2e6" stroke-width="1"/>
+  <rect x="90" y="230" width="200" height="30" fill="#0078d4"/>
+  <text x="190" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+    Serveur
+  </text>
+  <text x="100" y="280" font-family="Arial, sans-serif" font-size="11" fill="#495057">
+    Nom : WIN-SRV-01
+  </text>
+  <text x="100" y="300" font-family="Arial, sans-serif" font-size="11" fill="#495057">
+    Domaine : WORKGROUP
+  </text>
+  <text x="100" y="320" font-family="Arial, sans-serif" font-size="11" fill="#495057">
+    IP : 192.168.50.1
+  </text>
+  <text x="100" y="340" font-family="Arial, sans-serif" font-size="11" fill="#28a745">
+    Statut : ✅ Opérationnel
+  </text>
+  
+  <!-- Carte 2 - Rôles -->
+  <rect x="310" y="230" width="200" height="120" fill="white" stroke="#dee2e6" stroke-width="1"/>
+  <rect x="310" y="230" width="200" height="30" fill="#28a745"/>
+  <text x="410" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+    Rôles installés
+  </text>
+  <text x="320" y="280" font-family="Arial, sans-serif" font-size="11" fill="#495057">
+    Aucun rôle installé
+  </text>
+  <text x="320" y="300" font-family="Arial, sans-serif" font-size="11" fill="#495057">
+    Prêt pour l'installation
+  </text>
+  <text x="320" y="320" font-family="Arial, sans-serif" font-size="11" fill="#495057">
+    d'Active Directory
+  </text>
+  <text x="320" y="340" font-family="Arial, sans-serif" font-size="11" fill="#ffc107">
+    ⚠️ Rôles à installer
+  </text>
+  
+  <!-- Carte 3 - Fonctionnalités -->
+  <rect x="530" y="230" width="200" height="120" fill="white" stroke="#dee2e6" stroke-width="1"/>
+  <rect x="530" y="230" width="200" height="30" fill="#17a2b8"/>
+  <text x="630" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+    Fonctionnalités
+  </text>
+  <text x="540" y="280" font-family="Arial, sans-serif" font-size="11" fill="#495057">
+    Fonctionnalités de base
+  </text>
+  <text x="540" y="300" font-family="Arial, sans-serif" font-size="11" fill="#495057">
+    Windows PowerShell
+  </text>
+  <text x="540" y="320" font-family="Arial, sans-serif" font-size="11" fill="#495057">
+    Gestionnaire de serveur
+  </text>
+  <text x="540" y="340" font-family="Arial, sans-serif" font-size="11" fill="#28a745">
+    ✅ Installées
+  </text>
+  
+  <!-- Actions rapides -->
+  <rect x="90" y="370" width="640" height="80" fill="white" stroke="#dee2e6" stroke-width="1"/>
+  <text x="110" y="395" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">
+    Actions rapides disponibles :
+  </text>
+  
+  <!-- Boutons d'action -->
+  <rect x="110" y="410" width="150" height="30" fill="#0078d4" rx="5"/>
+  <text x="185" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+    Ajouter des rôles
+  </text>
+  
+  <rect x="280" y="410" width="150" height="30" fill="#28a745" rx="5"/>
+  <text x="355" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+    Ajouter des fonctionnalités
+  </text>
+  
+  <rect x="450" y="410" width="150" height="30" fill="#ffc107" rx="5"/>
+  <text x="525" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+    Configuration locale
+  </text>
+  
+  <!-- Informations supplémentaires -->
+  <rect x="90" y="460" width="640" height="60" fill="#d1ecf1" stroke="#bee5eb" stroke-width="1"/>
+  <text x="110" y="480" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0c5460">
+    💡 Le Gestionnaire de serveur :
+  </text>
+  <text x="110" y="500" font-family="Arial, sans-serif" font-size="11" fill="#0c5460">
+    • Se lance automatiquement au démarrage de Windows Server
+  </text>
+  <text x="110" y="515" font-family="Arial, sans-serif" font-size="11" fill="#0c5460">
+    • Permet de gérer les rôles, fonctionnalités et services du serveur
+  </text>
+</svg>

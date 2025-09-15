@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fond -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Titre -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    Démarrage des services
+  </text>
+  
+  <!-- Interface Services -->
+  <rect x="50" y="80" width="700" height="480" fill="white" stroke="#dee2e6" stroke-width="2" rx="8"/>
+  
+  <!-- Barre de titre -->
+  <rect x="50" y="80" width="700" height="30" fill="#0078d4"/>
+  <text x="70" y="100" font-family="Arial, sans-serif" font-size="14" fill="white">Services - Gestionnaire de serveur</text>
+  
+  <!-- Liste des services -->
+  <rect x="70" y="130" width="660" height="350" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+  
+  <!-- En-têtes -->
+  <rect x="70" y="130" width="660" height="25" fill="#e9ecef"/>
+  <text x="80" y="145" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#495057">Service</text>
+  <text x="300" y="145" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#495057">État</text>
+  <text x="450" y="145" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#495057">Type de démarrage</text>
+  
+  <!-- Services -->
+  <rect x="70" y="155" width="660" height="25" fill="white"/>
+  <text x="80" y="170" font-family="Arial, sans-serif" font-size="11" fill="#495057">Windows Update</text>
+  <rect x="300" y="160" width="60" height="15" fill="#28a745" rx="3"/>
+  <text x="330" y="171" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">En cours</text>
+  <text x="450" y="170" font-family="Arial, sans-serif" font-size="11" fill="#495057">Automatique</text>
+  
+  <rect x="70" y="180" width="660" height="25" fill="white"/>
+  <text x="80" y="195" font-family="Arial, sans-serif" font-size="11" fill="#495057">Windows Defender</text>
+  <rect x="300" y="185" width="60" height="15" fill="#28a745" rx="3"/>
+  <text x="330" y="196" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">En cours</text>
+  <text x="450" y="195" font-family="Arial, sans-serif" font-size="11" fill="#495057">Automatique</text>
+  
+  <rect x="70" y="205" width="660" height="25" fill="white"/>
+  <text x="80" y="220" font-family="Arial, sans-serif" font-size="11" fill="#495057">Service de temps Windows</text>
+  <rect x="300" y="210" width="60" height="15" fill="#28a745" rx="3"/>
+  <text x="330" y="221" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">En cours</text>
+  <text x="450" y="220" font-family="Arial, sans-serif" font-size="11" fill="#495057">Automatique</text>
+  
+  <rect x="70" y="230" width="660" height="25" fill="white"/>
+  <text x="80" y="245" font-family="Arial, sans-serif" font-size="11" fill="#495057">Gestionnaire de périphériques</text>
+  <rect x="300" y="235" width="60" height="15" fill="#28a745" rx="3"/>
+  <text x="330" y="246" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">En cours</text>
+  <text x="450" y="245" font-family="Arial, sans-serif" font-size="11" fill="#495057">Automatique</text>
+  
+  <rect x="70" y="255" width="660" height="25" fill="white"/>
+  <text x="80" y="270" font-family="Arial, sans-serif" font-size="11" fill="#495057">Service de découverte SSDP</text>
+  <rect x="300" y="260" width="60" height="15" fill="#dc3545" rx="3"/>
+  <text x="330" y="271" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Arrêté</text>
+  <text x="450" y="270" font-family="Arial, sans-serif" font-size="11" fill="#495057">Manuel</text>
+  
+  <rect x="70" y="280" width="660" height="25" fill="white"/>
+  <text x="80" y="295" font-family="Arial, sans-serif" font-size="11" fill="#495057">Service de stockage</text>
+  <rect x="300" y="285" width="60" height="15" fill="#28a745" rx="3"/>
+  <text x="330" y="296" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">En cours</text>
+  <text x="450" y="295" font-family="Arial, sans-serif" font-size="11" fill="#495057">Automatique</text>
+  
+  <!-- Bouton démarrage -->
+  <rect x="550" y="260" width="120" height="30" fill="#28a745" rx="5"/>
+  <text x="610" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">
+    Démarrer les services
+  </text>
+  
+  <!-- Instructions -->
+  <rect x="70" y="320" width="660" height="150" fill="#d1ecf1" stroke="#bee5eb" stroke-width="1"/>
+  <text x="90" y="345" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0c5460">
+    ✅ Passage au vert
+  </text>
+  <text x="90" y="370" font-family="Arial, sans-serif" font-size="12" fill="#0c5460">
+    Tous les services essentiels sont maintenant démarrés :
+  </text>
+  <text x="110" y="390" font-family="Arial, sans-serif" font-size="11" fill="#0c5460">
+    • Windows Update - En cours d'exécution
+  </text>
+  <text x="110" y="405" font-family="Arial, sans-serif" font-size="11" fill="#0c5460">
+    • Windows Defender - En cours d'exécution
+  </text>
+  <text x="110" y="420" font-family="Arial, sans-serif" font-size="11" fill="#0c5460">
+    • Service de temps Windows - En cours d'exécution
+  </text>
+  <text x="110" y="435" font-family="Arial, sans-serif" font-size="11" fill="#0c5460">
+    • Gestionnaire de périphériques - En cours d'exécution
+  </text>
+  <text x="110" y="450" font-family="Arial, sans-serif" font-size="11" fill="#0c5460">
+    • Service de stockage - En cours d'exécution
+  </text>
+</svg>

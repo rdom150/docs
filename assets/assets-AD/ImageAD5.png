@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fond -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Titre -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    Renommer le serveur
+  </text>
+  
+  <!-- Interface Gestionnaire de serveur -->
+  <rect x="50" y="80" width="700" height="480" fill="white" stroke="#dee2e6" stroke-width="2" rx="8"/>
+  
+  <!-- Barre de titre -->
+  <rect x="50" y="80" width="700" height="30" fill="#0078d4"/>
+  <text x="70" y="100" font-family="Arial, sans-serif" font-size="14" fill="white">Gestionnaire de serveur - WIN-SRV-01</text>
+  
+  <!-- Panneau principal -->
+  <rect x="70" y="130" width="660" height="350" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+  
+  <!-- Carte Serveur local -->
+  <rect x="90" y="160" width="620" height="120" fill="white" stroke="#dee2e6" stroke-width="1"/>
+  <rect x="90" y="160" width="620" height="30" fill="#0078d4"/>
+  <text x="400" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+    Serveur local
+  </text>
+  
+  <!-- Informations du serveur -->
+  <text x="110" y="210" font-family="Arial, sans-serif" font-size="12" fill="#495057">
+    Nom de l'ordinateur :
+  </text>
+  <text x="250" y="210" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc3545">
+    WIN-SRV-01 (à modifier)
+  </text>
+  
+  <text x="110" y="235" font-family="Arial, sans-serif" font-size="12" fill="#495057">
+    Domaine :
+  </text>
+  <text x="250" y="235" font-family="Arial, sans-serif" font-size="12" fill="#495057">
+    WORKGROUP
+  </text>
+  
+  <text x="110" y="260" font-family="Arial, sans-serif" font-size="12" fill="#495057">
+    Adresse IP :
+  </text>
+  <text x="250" y="260" font-family="Arial, sans-serif" font-size="12" fill="#495057">
+    192.168.50.1
+  </text>
+  
+  <!-- Bouton pour modifier -->
+  <rect x="500" y="205" width="180" height="35" fill="#ffc107" stroke="#ffc107" stroke-width="2" rx="5"/>
+  <text x="590" y="227" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#856404">
+    Cliquer pour modifier
+  </text>
+  
+  <!-- Fenêtre Propriétés système -->
+  <rect x="150" y="300" width="500" height="280" fill="white" stroke="#0078d4" stroke-width="3" rx="8"/>
+  
+  <rect x="150" y="300" width="500" height="30" fill="#0078d4" rx="8"/>
+  <text x="400" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+    Propriétés système
+  </text>
+  
+  <!-- Onglets -->
+  <rect x="170" y="350" width="80" height="25" fill="#0078d4"/>
+  <text x="210" y="367" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">Nom de l'ordinateur</text>
+  <text x="260" y="367" font-family="Arial, sans-serif" font-size="11" fill="#495057">Matériel</text>
+  <text x="320" y="367" font-family="Arial, sans-serif" font-size="11" fill="#495057">Avancé</text>
+  
+  <!-- Contenu de l'onglet -->
+  <rect x="170" y="385" width="460" height="180" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+  
+  <text x="190" y="415" font-family="Arial, sans-serif" font-size="12" fill="#495057">
+    Nom de l'ordinateur :
+  </text>
+  <rect x="190" y="425" width="200" height="25" fill="white" stroke="#ced4da" stroke-width="1"/>
+  <text x="200" y="442" font-family="Arial, sans-serif" font-size="11" fill="#495057">
+    WIN-SRV-01
+  </text>
+  
+  <text x="190" y="470" font-family="Arial, sans-serif" font-size="12" fill="#495057">
+    Groupe de travail :
+  </text>
+  <rect x="190" y="480" width="200" height="25" fill="white" stroke="#ced4da" stroke-width="1"/>
+  <text x="200" y="497" font-family="Arial, sans-serif" font-size="11" fill="#495057">
+    WORKGROUP
+  </text>
+  
+  <!-- Bouton Modifier -->
+  <rect x="420" y="430" width="80" height="30" fill="#28a745" rx="5"/>
+  <text x="460" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">
+    Modifier...
+  </text>
+  
+  <!-- Boutons de la fenêtre -->
+  <rect x="420" y="540" width="80" height="25" fill="#28a745" rx="3"/>
+  <text x="460" y="557" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">
+    OK
+  </text>
+  
+  <rect x="510" y="540" width="80" height="25" fill="#6c757d" rx="3"/>
+  <text x="550" y="557" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">
+    Annuler
+  </text>
+  
+  <!-- Instructions -->
+  <rect x="90" y="300" width="620" height="80" fill="#d1ecf1" stroke="#bee5eb" stroke-width="1"/>
+  <text x="110" y="325" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0c5460">
+    📝 Instructions pour renommer le serveur :
+  </text>
+  <text x="110" y="345" font-family="Arial, sans-serif" font-size="11" fill="#0c5460">
+    1. Cliquez sur "Serveur Local" puis sur le nom de l'ordinateur
+  </text>
+  <text x="110" y="360" font-family="Arial, sans-serif" font-size="11" fill="#0c5460">
+    2. Dans "Propriétés système", cliquez sur "Modifier..."
+  </text>
+  <text x="110" y="375" font-family="Arial, sans-serif" font-size="11" fill="#0c5460">
+    3. Renseignez le nouveau nom (ex: WINSRV01, DC01, SRV-DC-01)
+  </text>
+  
+  <!-- Recommandations -->
+  <rect x="90" y="390" width="620" height="70" fill="#fff3cd" stroke="#ffc107" stroke-width="1"/>
+  <text x="110" y="415" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#856404">
+    ⚠️ Recommandations de nommage :
+  </text>
+  <text x="110" y="435" font-family="Arial, sans-serif" font-size="11" fill="#856404">
+    • Utilisez une convention claire (WINSRV01, DC01, SRV-DC-01)
+  </text>
+  <text x="110" y="450" font-family="Arial, sans-serif" font-size="11" fill="#856404">
+    • Évitez les caractères spéciaux • Maximum 15 caractères • Un redémarrage sera requis
+  </text>
+</svg>

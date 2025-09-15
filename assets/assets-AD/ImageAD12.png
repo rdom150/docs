@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fond -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Titre -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    Options de configuration
+  </text>
+  
+  <!-- Interface Configuration finale -->
+  <rect x="50" y="80" width="700" height="480" fill="white" stroke="#dee2e6" stroke-width="2" rx="8"/>
+  
+  <!-- Barre de titre -->
+  <rect x="50" y="80" width="700" height="30" fill="#0078d4"/>
+  <text x="70" y="100" font-family="Arial, sans-serif" font-size="14" fill="white">Configuration des options supplémentaires</text>
+  
+  <!-- Assistant -->
+  <rect x="100" y="150" width="600" height="350" fill="white" stroke="#0078d4" stroke-width="2" rx="8"/>
+  
+  <text x="400" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">
+    Vérification des prérequis
+  </text>
+  
+  <!-- Résumé de la configuration -->
+  <rect x="130" y="200" width="540" height="250" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+  
+  <text x="150" y="230" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">
+    📋 Résumé de la configuration :
+  </text>
+  
+  <!-- Détails de configuration -->
+  <rect x="150" y="250" width="500" height="180" fill="white" stroke="#dee2e6" stroke-width="1"/>
+  
+  <text x="170" y="275" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#495057">
+    Configuration du domaine :
+  </text>
+  <text x="170" y="295" font-family="Arial, sans-serif" font-size="11" fill="#495057">
+    • Nom de domaine : company.local
+  </text>
+  <text x="170" y="310" font-family="Arial, sans-serif" font-size="11" fill="#495057">
+    • Niveau fonctionnel : Windows Server 2022
+  </text>
+  <text x="170" y="325" font-family="Arial, sans-serif" font-size="11" fill="#495057">
+    • Type : Nouveau domaine dans nouvelle forêt
+  </text>
+  
+  <text x="170" y="350" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#495057">
+    Options DNS :
+  </text>
+  <text x="170" y="370" font-family="Arial, sans-serif" font-size="11" fill="#495057">
+    • Serveur DNS : Installé automatiquement
+  </text>
+  <text x="170" y="385" font-family="Arial, sans-serif" font-size="11" fill="#495057">
+    • Délégation : Pas de délégation DNS
+  </text>
+  
+  <text x="170" y="410" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#495057">
+    Chemins d'accès :
+  </text>
+  <text x="170" y="430" font-family="Arial, sans-serif" font-size="11" fill="#495057">
+    • Base de données : C:\Windows\NTDS
+  </text>
+  <text x="170" y="445" font-family="Arial, sans-serif" font-size="11" fill="#495057">
+    • Fichiers journaux : C:\Windows\NTDS
+  </text>
+  
+  <!-- Vérification des prérequis -->
+  <rect x="130" y="460" width="540" height="30" fill="#d4edda" stroke="#c3e6cb" stroke-width="1"/>
+  <text x="150" y="480" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#155724">
+    ✅ Tous les prérequis sont satisfaits - Prêt pour l'installation
+  </text>
+  
+  <!-- Boutons -->
+  <rect x="300" y="520" width="80" height="30" fill="#6c757d" rx="5"/>
+  <text x="340" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+    Précédent
+  </text>
+  
+  <rect x="400" y="520" width="120" height="30" fill="#28a745" rx="5"/>
+  <text x="460" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+    Installer
+  </text>
+  
+  <rect x="540" y="520" width="80" height="30" fill="#dc3545" rx="5"/>
+  <text x="580" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+    Annuler
+  </text>
+</svg>
