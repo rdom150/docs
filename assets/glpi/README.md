@@ -1,16 +1,3 @@
-Place screenshots here so they are referenced by docs/docs/glpi-gpo.md.
+Dossier pour les images GLPI.
 
-Expected filenames:
-- ImageGPOGLPI1.png
-- ImageGPOGLPI2.png
-- ImageGPOGLPI3.png
-- ImageGPOGLPI4.png
-- ImageGPOGLPI5.png
-- ImageGPOGLPI6.png
-- ImageGPOGLPI7.png
-- ImageGPOGLPI8.png
-- ImageGPOGLPI9.png
-- ImageGPOGLPI10.png
-- ImageGPOGLPI11.png
-
-Tip: keep reasonable resolution (e.g. 1200px width) and PNG format for clarity.
+Note: Les références aux images ont été supprimées du document glpi-gpo.md car les fichiers images n'étaient pas présents. Si vous souhaitez ajouter des captures d'écran à l'avenir, placez-les ici et mettez à jour le document en conséquence.
