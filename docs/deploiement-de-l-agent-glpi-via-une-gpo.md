@@ -14,7 +14,7 @@ Avant de commencer, assurez-vous d'avoir :
 * **Mis en place un partage réseau** accessible aux ordinateurs du réseau pour héberger le fichier d'installation.
 * **Activé la fonction d'inventaire dans GLPI** pour recevoir les données des postes clients.
 
-![Activation de l'inventaire dans GLPI](../assets/assets/deploiement-de-l-agent-glpi-via-une-gpo/ImageGPOGLPI1.png)
+![Activation de l'inventaire dans GLPI](../assets/assets-deploiement-de-l-agent-glpi-via-une-gpo/deploiement-de-l-agent-glpi-via-une-gpo/ImageGPOGLPI1.png)
 
 ## Déploiement de l'Agent GLPI via une GPO
 
@@ -28,7 +28,7 @@ Téléchargez le fichier d'installation de l'Agent GLPI (.msi) compatible avec v
 
 Placez le fichier MSI dans un partage réseau accessible aux ordinateurs du réseau.
 
-![Placement du MSI sur un partage réseau](../assets/assets/deploiement-de-l-agent-glpi-via-une-gpo/ImageGPOGLPI2.png)
+![Placement du MSI sur un partage réseau](../assets/assets-deploiement-de-l-agent-glpi-via-une-gpo/deploiement-de-l-agent-glpi-via-une-gpo/ImageGPOGLPI2.png)
 
 > **Explication détaillée** : Le partage réseau doit être accessible en lecture par les comptes ordinateurs du domaine. Utilisez un chemin UNC (Universal Naming Convention) de type `\\serveur\partage\glpi-agent-x.y.z-x64.msi`. Évitez les chemins avec des lettres de lecteur mappées car elles ne sont pas disponibles lors du démarrage de l'ordinateur.
 
@@ -36,7 +36,7 @@ Placez le fichier MSI dans un partage réseau accessible aux ordinateurs du rés
 
 Dans le dossier des GPO, créez une nouvelle GPO nommée "AgentGLPI".
 
-![Création de la GPO AgentGLPI](../assets/assets/deploiement-de-l-agent-glpi-via-une-gpo/ImageGPOGLPI3.png)
+![Création de la GPO AgentGLPI](../assets/assets-deploiement-de-l-agent-glpi-via-une-gpo/deploiement-de-l-agent-glpi-via-une-gpo/ImageGPOGLPI3.png)
 
 > **Explication détaillée** : 
 > 1. Ouvrez la console **Gestion de stratégie de groupe** (GPMC) depuis un serveur avec les outils d'administration Active Directory
@@ -55,7 +55,7 @@ Modifiez la GPO en accédant à "Configuration ordinateur > Stratégies > Param�
 Sélectionnez "Nouveau Package" et choisissez l'emplacement réseau du fichier MSI de l'Agent GLPI.  
 Sélectionnez "Attribué" pour le mode d'installation.
 
-![Ajout du package MSI - sélection du chemin UNC](../assets/assets/deploiement-de-l-agent-glpi-via-une-gpo/ImageGPOGLPI4.png)
+![Ajout du package MSI - sélection du chemin UNC](../assets/assets-deploiement-de-l-agent-glpi-via-une-gpo/deploiement-de-l-agent-glpi-via-une-gpo/ImageGPOGLPI4.png)
 
 > **Explication détaillée** :
 > 1. **Éditez la GPO** : Clic droit sur la GPO "AgentGLPI" → "Modifier"
@@ -64,11 +64,11 @@ Sélectionnez "Attribué" pour le mode d'installation.
 > 4. **Sélectionnez le fichier** : Naviguez vers le chemin UNC du MSI (ex: `\\srv\deploiement\GLPI-Agent\glpi-agent-x.y.z-x64.msi`)
 > 5. **Choisissez le mode** : Sélectionnez **"Attribué"** comme mode d'installation
 
-![Propriétés du package MSI](../assets/assets/deploiement-de-l-agent-glpi-via-une-gpo/ImageGPOGLPI5.png)
+![Propriétés du package MSI](../assets/assets-deploiement-de-l-agent-glpi-via-une-gpo/deploiement-de-l-agent-glpi-via-une-gpo/ImageGPOGLPI5.png)
 
 > **Explication du mode "Attribué"** : Le mode "Attribué" installe automatiquement l'application au démarrage de l'ordinateur, sans intervention de l'utilisateur. C'est idéal pour les déploiements d'agents de gestion.
 
-![Package attribué affiché dans la GPO](../assets/assets/deploiement-de-l-agent-glpi-via-une-gpo/ImageGPOGLPI6.png)
+![Package attribué affiché dans la GPO](../assets/assets-deploiement-de-l-agent-glpi-via-une-gpo/deploiement-de-l-agent-glpi-via-une-gpo/ImageGPOGLPI6.png)
 
 ### Configuration des Paramètres du Registre
 
@@ -83,7 +83,7 @@ Type de valeur : REG_SZ.
 Données de valeur : http://glpi.company.infra/front/inventory.php.
 ```
 
-![Préférence Registre - clé server](../assets/assets/deploiement-de-l-agent-glpi-via-une-gpo/ImageGPOGLPI7.png)
+![Préférence Registre - clé server](../assets/assets-deploiement-de-l-agent-glpi-via-une-gpo/deploiement-de-l-agent-glpi-via-une-gpo/ImageGPOGLPI7.png)
 
 > **Explication détaillée** :
 > 1. **Dans la même GPO** : Restez dans l'éditeur de la GPO "AgentGLPI"
@@ -112,7 +112,7 @@ Type de valeur : REG_SZ
 Données de valeur : Company
 ```
 
-![Préférence Registre - clé tag](../assets/assets/deploiement-de-l-agent-glpi-via-une-gpo/ImageGPOGLPI8.png)
+![Préférence Registre - clé tag](../assets/assets-deploiement-de-l-agent-glpi-via-une-gpo/deploiement-de-l-agent-glpi-via-une-gpo/ImageGPOGLPI8.png)
 
 > **Explication détaillée** :
 > 1. **Créer un second élément** : Répétez la procédure précédente pour créer un autre élément de registre
@@ -152,7 +152,7 @@ Redémarrez le poste client pour appliquer les changements.
 
 Sur le poste client, vérifiez dans les applications si GLPI Agent est installé.
 
-![Vérification de l'installation de GLPI Agent](../assets/assets/deploiement-de-l-agent-glpi-via-une-gpo/ImageGPOGLPI9.png)
+![Vérification de l'installation de GLPI Agent](../assets/assets-deploiement-de-l-agent-glpi-via-une-gpo/deploiement-de-l-agent-glpi-via-une-gpo/ImageGPOGLPI9.png)
 
 > **Explication détaillée** :
 > 1. **Ouvrez les paramètres Windows** : Démarrer → Paramètres → Applications
@@ -164,7 +164,7 @@ Sur le poste client, vérifiez dans les applications si GLPI Agent est installé
 
 Accédez au navigateur sur le poste client et utilisez l'adresse http://127.0.0.1:62354 pour forcer l'envoi de l'inventaire.
 
-![Interface locale de l'agent pour forcer l'inventaire](../assets/assets/deploiement-de-l-agent-glpi-via-une-gpo/ImageGPOGLPI10.png)
+![Interface locale de l'agent pour forcer l'inventaire](../assets/assets-deploiement-de-l-agent-glpi-via-une-gpo/deploiement-de-l-agent-glpi-via-une-gpo/ImageGPOGLPI10.png)
 
 > **Explication détaillée** :
 > 1. **Ouvrez un navigateur web** sur le poste client
@@ -177,7 +177,7 @@ Accédez au navigateur sur le poste client et utilisez l'adresse http://127.0.0.
 
 Vérifiez sur l'interface d'administration de GLPI dans la section "Inventaire" si le poste client apparaît en cliquant sur l'icône Robot.
 
-![Vérification de l'inventaire dans GLPI](../assets/assets/deploiement-de-l-agent-glpi-via-une-gpo/ImageGPOGLPI11.png)
+![Vérification de l'inventaire dans GLPI](../assets/assets-deploiement-de-l-agent-glpi-via-une-gpo/deploiement-de-l-agent-glpi-via-une-gpo/ImageGPOGLPI11.png)
 
 > **Explication détaillée** :
 > 1. **Connectez-vous à GLPI** : Ouvrez votre navigateur et accédez à l'interface d'administration GLPI
