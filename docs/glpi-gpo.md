@@ -10,6 +10,7 @@ Ce guide explique comment déployer l'Agent GLPI sur des postes Windows à l'aid
 - **Fichier d'installation**: téléchargez l'installateur MSI de l'Agent GLPI compatible avec votre version de GLPI.
 - **Partage réseau**: hébergez le MSI sur un partage accessible en lecture par les ordinateurs cibles (ex: `\\srv\\deploiement\\GLPI-Agent\\glpi-agent-x.y.z-x64.msi`).
 - **GLPI**: activez la fonction d'inventaire côté GLPI pour recevoir les données.
+![Activation de l'inventaire dans GLPI](../assets/glpi/ImageGPOGLPI2.png)
 - **Droits AD**: permissions pour créer/éditer des GPO et lier à l'OU concernée.
 
 ---
@@ -19,11 +20,13 @@ Ce guide explique comment déployer l'Agent GLPI sur des postes Windows à l'aid
 2. Copiez le fichier dans le partage réseau (chemin UNC) accessible aux ordinateurs.
 
 > Astuce: utilisez un chemin UNC stable (pas de lecteur mappé), sinon l'installation au démarrage échouera.
+![Placement du MSI sur un partage réseau](../assets/glpi/ImageGPOGLPI1.png)
 
 #### Étape 2 — Créer la GPO « AgentGLPI »
 1. Ouvrez la console Gestion de stratégie de groupe (GPMC).
 2. Cliquez droit sur votre domaine ou l'OU cible → « Créer un objet GPO dans ce domaine et le lier ici… ».
 3. Nommez la GPO: `AgentGLPI`.
+![Création de la GPO AgentGLPI](../assets/glpi/ImageGPOGLPI3.png)
 
 #### Étape 3 — Ajouter le package MSI (installation attribuée)
 1. Éditez la GPO `AgentGLPI`.
@@ -33,6 +36,9 @@ Ce guide explique comment déployer l'Agent GLPI sur des postes Windows à l'aid
 5. Choisissez **Attribué** comme mode d'installation.
 
 > Remarque: le mode « Attribué » installe l'application au démarrage de la machine.
+![Ajout du package MSI - sélection du chemin UNC](../assets/glpi/ImageGPOGLPI4.png)
+![Propriétés du package MSI](../assets/glpi/ImageGPOGLPI5.png)
+![Package attribué affiché dans la GPO](../assets/glpi/ImageGPOGLPI6.png)
 
 #### Étape 4 — Configurer les paramètres du Registre (serveur et tag)
 Dans la même GPO:
@@ -48,6 +54,7 @@ Nom de valeur: server
 Type de valeur: REG_SZ
 Données de valeur: http://glpi.company.infra/front/inventory.php
 ```
+![Préférence Registre - clé server](../assets/glpi/ImageGPOGLPI7.png)
 
 ```
 Action: Mettre à jour
@@ -57,6 +64,7 @@ Nom de valeur: tag
 Type de valeur: REG_SZ
 Données de valeur: Company
 ```
+![Préférence Registre - clé tag](../assets/glpi/ImageGPOGLPI8.png)
 
 > Adaptez l'URL du serveur GLPI et le « tag » à votre environnement.
 
@@ -73,11 +81,13 @@ gpupdate /force
 
 #### Étape 6 — Vérifier l'installation côté poste
 - Dans « Applications et fonctionnalités », vérifiez que **GLPI Agent** est installé.
+![Vérification de l'installation de GLPI Agent](../assets/glpi/ImageGPOGLPI9.png)
 - Vérifiez l'interface locale de l'agent:
 
 ```
 http://127.0.0.1:62354
 ```
+![Interface locale de l'agent pour forcer l'inventaire](../assets/glpi/ImageGPOGLPI10.png)
 
 - Depuis cette interface, vous pouvez forcer l'envoi d'un inventaire.
 
@@ -85,6 +95,7 @@ http://127.0.0.1:62354
 - Connectez-vous à l’interface d’administration GLPI.
 - Ouvrez la section « Inventaire » (ou via l'icône Robot selon votre version).
 - Recherchez le poste testé et confirmez la réception de l'inventaire.
+![Vérification de l'inventaire dans GLPI](../assets/glpi/ImageGPOGLPI11.png)
 
 ---
 
@@ -95,8 +106,4 @@ http://127.0.0.1:62354
 
 ---
 
-#### Références
-- Source: `https://docs.ldurand-it.fr/fr/Services/GLPI/glpigpo`
-- Tutoriel associé: `https://www.it-connect.fr/tuto-installer-configurer-gpo-agent-glpi-windows/`
 
-> Bien joué ✔️ En suivant ces étapes, vous pouvez déployer l’Agent GLPI via GPO et centraliser vos inventaires dans GLPI.
