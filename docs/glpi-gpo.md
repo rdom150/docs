@@ -223,4 +223,3 @@ Vérifiez sur l'interface d'administration de GLPI dans la section "Inventaire" 
 
 ---
 
-> **Félicitations ! 🎉** En suivant ce guide étape par étape, vous avez maintenant une solution complète pour déployer automatiquement l'Agent GLPI sur vos postes clients via GPO et centraliser vos inventaires informatiques dans GLPI.
