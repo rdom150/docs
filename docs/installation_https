@@ -74,6 +74,42 @@ On travaille sur le serveur web srv-web1
 mv /home/etudiant/srvwebcert.pem /etc/ssl/certs/
 chown root:root /etc/ssl/certs/srvwebcert.pem
 ```
+## 5. Configuration d'Apache2 sur le serveur web
+- Activation du module ssl sous Apache2
+```bash
+a2enmod ssl
+a2enmod rewrite
+```
+- Création du virtualhost pour https
+```bash
+cd /etc/apache2/sites-available/
+cp sodecaf.conf sodecaf-ssl.conf
+```
+- Modification du fichier sodecaf-ssl.conf
+```apache
+<VirtualHost *:443>
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/sodecaf
+        DirectoryIndex sodecaf.html
+
+        SSLEngine on
+        SSLCertificateFile /etc/ssl/certs/srvwebcert.pem
+        SSLCertificateKeyFile /etc/ssl/private/srvwebkey.pem
+
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+<VirtualHost *:80>
+        RewriteEngine On
+        RewriteCond %{HTTPS} !=on
+        RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
+</VirtualHost>
+```
+- Activation du site et redémarrage du service Apache2
+```bash
+a2ensite sodecaf-ssl.conf
+systemctl restart apache2
+```
 ## 6. Bonus : création d'un certificat autosigné, directement sur le serveur web
 ```bash
 openssl genrsa -out /etc/ssl/private/srvwebkey.pem 4096
