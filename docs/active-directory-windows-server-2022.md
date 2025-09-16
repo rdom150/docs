@@ -32,7 +32,7 @@ Ayez aussi une machine Windows 10 / 11 pour effectuer de futurs test que l'on ne
 Après avoir terminé l'installation de Windows Server 2022 en suivant ce guide vous allez devoir définir un mot de passe robuste pour votre serveur.  
 Pour des questions de sécurités évidentes ce mot de passe ne doit être connu & accessible uniquement aux Administrateurs Systèmes & Réseaux de votre entreprise.
 
-![Mot de passe administrateur](../assets/assets-AD/ImageAD1.png)
+![Mot de passe administrateur](../assets/assets-AD/winad1.png)
 
 > **[Sécurité 🔐]**  
 > Pour plus de sécurité utiliser un gestionnaire de mots de passe comme KeePass validé par l'ANSSI pour générer et stocker vos mots de passes.
@@ -52,7 +52,7 @@ Cela ne pose pas réellement de problème lorsque vous êtes sur un serveur Phys
 * Cliquez sur l'icone de Touche A
 * Cliquez sur l'icone des trois touches tout en bas.
 
-![Déverrouillage VM PVE](../assets/assets-AD/ImageAD2.png)
+![Déverrouillage VM PVE](../assets/assets-AD/winad2.png)
 
 Désormais vous avez accès à l'écran de connexion.  
 Saisissez vos Identifiants et patientez.
@@ -73,7 +73,7 @@ Le Gestionnaire de serveur est une console de gestion disponible dans Windows Se
 
 Le Gestionnaire de Serveur se lancera automatiquement à chaque démarrage de Windows Server.
 
-![Gestionnaire de serveur](../assets/assets-AD/ImageAD3.png)
+![Gestionnaire de serveur](../assets/assets-AD/winad3.png)
 
 > **Explication détaillée** :
 > 1. **Console centralisée** : Le Gestionnaire de serveur permet de gérer plusieurs serveurs depuis une interface unique
@@ -92,7 +92,7 @@ Je vais alors procéder de cette manière :
 * Passerelle Par défaut : _192.168.50.254_
 * DNS ce sera notre Windows Serveur alors on met _127.0.0.1_ soit lui-même
 
-![Configuration adressage IP](../assets/assets-AD/ImageAD4.png)
+![Configuration adressage IP](../assets/assets-AD/winad4.png)
 
 > **Explication détaillée** :
 > 1. **Configuration IP statique** : Évitez l'IP dynamique pour un serveur de domaine
@@ -110,7 +110,7 @@ Pour cela rendez vous sur le Gestionnaire De Serveur :
 * Dans Propriétés Systèmes clique sur modifier puis sur autres
 * Renseigner le domain et le nom , le nom complet s'affichera après
 
-![Renommer le serveur](../assets/assets-AD/ImageAD5.png)
+![Renommer le serveur](../assets/assets-AD/winad5.png)
 
 > **[NOMMER SON SERVEUR]**  
 > Pour nommer votre serveur soyez assez simple et explicite pour pouvoir l'identifier facilement.  
@@ -134,7 +134,7 @@ Pour cela :
 * Un fenêtre s'ouvre
 * Faites un clique droit sur les services et selectionnez démarrez les services.
 
-![Démarrage des services](../assets/assets-AD/ImageAD6.png)
+![Démarrage des services](../assets/assets-AD/winad6.png)
 
 Vous êtes désormais passé dans le vert.
 
@@ -161,7 +161,7 @@ Dans le gestionnaire de serveur en haut à droite cliquez sur Gérer
 * Ensuite selectionnez le rôle "AD DS" puis ajoutez les fonctionnalités
 * Après vérifiez tout dans la fenêtre de confirmation puis installer
 
-![Ajouter le rôle AD DS](../assets/assets-AD/ImageAD7.png)
+![Ajouter le rôle AD DS](../assets/assets-AD/winad7.png)
 
 > **Explication détaillée** :
 > 1. **Assistant d'installation** : L'assistant guide à travers l'installation des rôles
@@ -170,14 +170,14 @@ Dans le gestionnaire de serveur en haut à droite cliquez sur Gérer
 > 4. **Fonctionnalités automatiques** : L'assistant ajoute automatiquement les fonctionnalités nécessaires
 > 5. **Confirmation** : Vérifiez tous les éléments avant l'installation
 
-![Sélection des fonctionnalités AD](../assets/assets-AD/ImageAD8.png)
+![Sélection des fonctionnalités AD](../assets/assets-AD/winad8.png)
 
 ### Promouvoir en Contrôleur de Domaine
 
 Désormais nous sommes à une étape primordiale qui est de promouvoir notre serveur en contrôleur de domaine.  
 Pour cela à la fin de l'installation de Active Directory ne fermez pas la fenêtre de l'assistant et cliquez sur le lien bleu.
 
-![Promouvoir en contrôleur de domaine](../assets/assets-AD/ImageAD9.png)
+![Promouvoir en contrôleur de domaine](../assets/assets-AD/winad9.png)
 
 On va maintenant configurer le déploiement d'Active Directory.
 
@@ -185,7 +185,7 @@ On va maintenant configurer le déploiement d'Active Directory.
 * Pas de Délégation DNS
 * Laisser les chemins d'accès par défaut
 
-![Configuration du déploiement AD](../assets/assets-AD/ImageAD10.png)
+![Configuration du déploiement AD](../assets/assets-AD/winad10.png)
 
 > **Explication détaillée** :
 > 1. **Nom de domaine** : Choisissez un nom de domaine interne (ex: company.local, domaine.local)
@@ -194,9 +194,9 @@ On va maintenant configurer le déploiement d'Active Directory.
 > 4. **Chemins par défaut** : Acceptez les chemins par défaut pour les bases de données AD
 > 5. **Mode de restauration** : Configurez un mot de passe fort pour le mode de restauration
 
-![Configuration DNS](../assets/assets-AD/ImageAD11.png)
+![Configuration DNS](../assets/assets-AD/winad11.png)
 
-![Options de configuration](../assets/assets-AD/ImageAD12.png)
+![Options de configuration](../assets/assets-AD/winad12.png)
 
 > **Explication détaillée** :
 > 1. **Configuration DNS** : Le serveur DNS sera installé automatiquement
