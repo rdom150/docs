@@ -185,13 +185,21 @@ systemctl restart apache2
 - Utilisateur SQL : `Adminglpi`
 - Mot de passe SQL : `Password123!`
 
+![Assistant GLPI - Connexion DB](../assets/glpi-installation/glpi04.png)
+![Assistant GLPI - Sélection base](../assets/glpi-installation/glpi05.png)
+![Assistant GLPI - Initialisation BDD](../assets/glpi-installation/glpi06.png)
+
 Testez la connexion, sélectionnez la base `companyGLPI`, lancez l’initialisation.
+
+![Assistant GLPI - Suite installation](../assets/glpi-installation/glpi07.png)
 
 ### Finalisation
 
 Poursuivez les écrans jusqu’à la fin de l’installation. Première connexion :
 - Utilisateur : `glpi`
 - Mot de passe : `glpi`
+
+![Assistant GLPI - Fin installation](../assets/glpi-installation/glpi09.png)
 
 ---
 
