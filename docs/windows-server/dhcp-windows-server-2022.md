@@ -2,15 +2,11 @@
 
 ## Introduction & Prérequis
 
-Bienvenue dans ce guide pratique qui vous aidera à mettre en place un serveur DHCP (Dynamic Host Configuration Protocol) sur votre réseau. Suivez ces étapes simples pour garantir une distribution dynamique et efficace des adresses IP à vos clients.
+ mettre en place un serveur DHCP (Dynamic Host Configuration Protocol) 
 
-> C'est quoi le DHCP ?
+
 > Le protocole DHCP est un protocole client/serveur qui fournit automatiquement une adresse IP et d'autres informations de configuration pertinentes à un hôte IP (par exemple, masque de sous-réseau et passerelle par défaut).
 
-Liens utiles:
-- https://learn.microsoft.com/fr-fr/windows-server/networking/technologies/dhcp/dhcp-top
-- https://www.it-connect.fr/chapitres/dhcp-presentation-et-definitions/
-- https://fr.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol
 
 Prérequis:
 - Suite aux guides: création d'une VM Windows Server 2022 et Active Directory Windows Server 2022
@@ -79,11 +75,4 @@ Non nécessaire pour ce guide simple.
 
 ![Test ipconfig](../../assets/dhcp-windows-server/dhcpwinsrv7.png)
 
-### Conclusion
 
-Félicitations ! Vous avez maintenant un serveur DHCP opérationnel sur votre réseau. Les clients recevront automatiquement des adresses IP conformes à votre configuration. Ajustez les paramètres si nécessaire.
-
-Liens complémentaires:
-- https://learn.microsoft.com/fr-fr/windows-server/networking/technologies/dhcp/quickstart-install-configure-dhcp-server?tabs=powershell
-- https://www.it-connect.fr/installer-et-configurer-un-serveur-dhcp-sous-windows-server-2019/
-- https://www.lemagit.fr/conseil/Reseau-comment-configurer-un-serveur-DHCP-sur-Windows
