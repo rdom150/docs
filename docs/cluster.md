@@ -67,5 +67,43 @@ crm configure show
 ```
 - Désactiver le stonith (shot the other node in the head)
 ```bash
- stonith-enabled=false
+crm configure property stonith-enabled=false
 ```
+- Désactiver le quorum
+```bash
+crm configure property no-quorum-policy="ignore"
+```
+- Configuration du failover IP (IP virtuelle)
+```bash
+crm configure primitive IPFailover ocf:heartbeat:IPaddr2 params ip=172.16.0.12 cidr_netmask=24 nic=ens192 iflabel=VIP
+```
+- Tests de basculement
+```bash
+crm node online
+crm node standby
+```
+- Arrêter et supprimer une ressource
+```bash
+crm resource stop nom_ressource
+crm configure delete nom_ressource
+```
+- Editer la configuration : à utiliser avec prudence
+```bash
+crm configure edit
+```
+- Création d'une ressource serviceWeb
+```bash
+crm configure primitive serviceWeb lsb:apache2 op monitor interval=60s op start interval=0 timeout=60s op stop interval=0 timeout=60s
+```
+- Regroupement des ressources IPFailover et serviceWeb
+```bash
+crm configure group servweb IPFailover serviceWeb meta migration-threshold="5"
+```
+- Définir une préférence de noeud primaire pour l'IP virtuelle
+```bash
+crm resource move IPFailover srv-web1
+```
+- Effacer les erreurs sur une ressource
+```bash
+crm resource cleanup IPFailover
+``` 
