@@ -23,7 +23,7 @@ Avant de commencer, préparez:
 - Entrez les identifiants Administrateur du domaine
 - Attendez le message de bienvenue dans le domaine
 
-![Join Domain - Assistant](../../assets/join-domain/ImageJoinDomain.png)
+![Join Domain - Assistant](../../assets/join-domain/joindomain1.png)
 
 ---
 
@@ -32,6 +32,6 @@ Avant de commencer, préparez:
 - Redémarrez la machine
 - Connectez-vous avec un compte du domaine
 
-![Join Domain - Connexion](../../assets/join-domain/ImageJoinDomain.png)
+![Join Domain - Connexion](../../assets/join-domain/joindomain1.png)
 
 ---

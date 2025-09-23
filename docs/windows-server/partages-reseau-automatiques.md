@@ -18,13 +18,13 @@ Ce guide vous montre comment automatiser le montage de partages réseau pour les
 
 Tout d'abord, créez vos partages réseau avec les autorisations appropriées. Assurez-vous qu'ils sont accessibles et configurés selon vos besoins.
 
-![Partages réseau](../../assets/network-share-auto/Image01.png)
+![Partages réseau](../../assets/partages-reseau-automatiques/networkshareauto01.png)
 
 ### Écriture du Script de Montage
 
 Ensuite, créez un script de montage pour chaque partage. Écrivez les scripts à l'emplacement approprié (par exemple un partage \NETLOGON ou un dossier centralisé de scripts).
 
-![Emplacement des scripts](../../assets/network-share-auto/Image02.png)
+![Emplacement des scripts](../../assets/partages-reseau-automatiques/networkshareauto02.png)
 
 Exemple de contenu pour un script de connexion:
 
@@ -33,19 +33,19 @@ net use Z: \\serveur\partage1
 net use Y: \\serveur\partage2
 ```
 
-![Exemple de script](../../assets/network-share-auto/Image03.png)
+![Exemple de script](../../assets/partages-reseau-automatiques/networkshareauto03.png)
 
 ### Attribution du Script dans l'AD
 
 Dans l'Active Directory, accédez au profil de l'utilisateur et spécifiez le chemin complet du script de montage dans la section d'ouverture de session.
 
-![Attribution script AD](../../assets/network-share-auto/Image04.png)
+![Attribution script AD](../../assets/partages-reseau-automatiques/networkshareauto04.png)
 
 ### Résultat
 
 > La Première partie est fonctionnelle
 
-![Résultat script](../../assets/network-share-auto/Image05.png)
+![Résultat script](../../assets/partages-reseau-automatiques/networkshareauto05.png)
 
 ---
 
@@ -55,17 +55,17 @@ Dans l'Active Directory, accédez au profil de l'utilisateur et spécifiez le ch
 
 Configurez les autorisations du dossier utilisateur pour garantir la sécurité et l'accessibilité appropriées.
 
-![Autorisations dossier](../../assets/network-share-auto/Image06.png)
+![Autorisations dossier](../../assets/partages-reseau-automatiques/networkshareauto06.png)
 
 ### Attribution de la Lettre de Lecteur dans l'AD
 
 Dans l'Active Directory, configurez le dossier personnel de l'utilisateur en lui attribuant une lettre de lecteur pour un accès facile.
 
-![Lettre de lecteur AD](../../assets/network-share-auto/Image07.png)
+![Lettre de lecteur AD](../../assets/partages-reseau-automatiques/networkshareauto07.png)
 
 ### Résultat
 
-![Résultat dossier personnel](../../assets/network-share-auto/Image08.png)
+![Résultat dossier personnel](../../assets/partages-reseau-automatiques/networkshareauto08.png)
 
 ---
 
