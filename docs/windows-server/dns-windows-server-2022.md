@@ -55,11 +55,4 @@ Créez une redirection pour GLPI dans la zone de recherche directe.
 
 ---
 
-## Résultat
 
-Félicitations ! Vous avez configuré avec succès le service DNS sur votre serveur Windows Server 2022. Assurez-vous que les configurations correspondent à votre environnement et testez la résolution DNS.
-
-Liens utiles:
-- https://www.cloudflare.com/fr-fr/learning/dns/what-is-dns/
-- https://fr.wikipedia.org/wiki/Domain_Name_Service
-- https://learn.microsoft.com/fr-fr/windows-server/networking/dns/quickstart-install-configure-dns-server?tabs=powershell

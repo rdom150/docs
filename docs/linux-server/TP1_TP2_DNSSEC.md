@@ -1,12 +1,12 @@
 # TP – Mise en place et sécurisation d’un DNS (BIND9 + DNSSEC)
 
 Ce document regroupe **l’ensemble des explications et commandes** vues dans la conversation :  
-- TP1 : Mise en place d’un serveur DNS BIND9 (primaire + secondaire)  
-- TP2 : Sécurisation avec DNSSEC  
+-  Mise en place d’un serveur DNS BIND9 (primaire + secondaire)  
+-  Sécurisation avec DNSSEC  
 
 ---
 
-# 🔹 TP1 – Mise en place d’un serveur DNS BIND9
+# 🔹 Mise en place d’un serveur DNS BIND9
 
 ## 1. Préparer l’environnement
 
@@ -205,7 +205,7 @@ systemctl restart bind9
 
 ---
 
-# 🔹 TP2 – Activer DNSSEC sur BIND9
+#  Activer DNSSEC sur BIND9
 
 ## 1. Préparer l’environnement
 

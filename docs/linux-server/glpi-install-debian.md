@@ -175,9 +175,9 @@ systemctl restart apache2
 - Choisissez « Installer »
 - Vérifiez la compatibilité de l’environnement puis continuez
 
-![Assistant GLPI - Étape 1](../assets/glpi-installation/glpi01.png)
-![Assistant GLPI - Étape 2](../assets/glpi-installation/glpi02.png)
-![Assistant GLPI - Étape 3](../assets/glpi-installation/glpi03.png)
+![Assistant GLPI - Étape 1](../../assets/glpi-installation/glpi01.png)
+![Assistant GLPI - Étape 2](../../assets/glpi-installation/glpi02.png)
+![Assistant GLPI - Étape 3](../../assets/glpi-installation/glpi03.png)
 
 ### Connexion à la base de données
 
@@ -185,13 +185,13 @@ systemctl restart apache2
 - Utilisateur SQL : `Adminglpi`
 - Mot de passe SQL : `Password123!`
 
-![Assistant GLPI - Connexion DB](../assets/glpi-installation/glpi04.png)
-![Assistant GLPI - Sélection base](../assets/glpi-installation/glpi05.png)
-![Assistant GLPI - Initialisation BDD](../assets/glpi-installation/glpi06.png)
+![Assistant GLPI - Connexion DB](../../assets/glpi-installation/glpi04.png)
+![Assistant GLPI - Sélection base](../../assets/glpi-installation/glpi05.png)
+![Assistant GLPI - Initialisation BDD](../../assets/glpi-installation/glpi06.png)
 
 Testez la connexion, sélectionnez la base `companyGLPI`, lancez l’initialisation.
 
-![Assistant GLPI - Suite installation](../assets/glpi-installation/glpi07.png)
+![Assistant GLPI - Suite installation](../../assets/glpi-installation/glpi07.png)
 
 ### Finalisation
 
@@ -199,7 +199,7 @@ Poursuivez les écrans jusqu’à la fin de l’installation. Première connexio
 - Utilisateur : `glpi`
 - Mot de passe : `glpi`
 
-![Assistant GLPI - Fin installation](../assets/glpi-installation/glpi09.png)
+![Assistant GLPI - Fin installation](../../assets/glpi-installation/glpi09.png)
 
 ---
 
@@ -209,7 +209,7 @@ Poursuivez les écrans jusqu’à la fin de l’installation. Première connexio
 
 Changez immédiatement les mots de passe des comptes par défaut (glpi, tech, normal, post-only).
 
-![Post-installation - Modification mots de passe](../assets/glpi-installation/glpi11.png)
+![Post-installation - Modification mots de passe](../../assets/glpi-installation/glpi11.png)
 
 ### Fichier d’installation
 
@@ -221,8 +221,4 @@ rm /var/www/glpi/install/install.php
 
 ---
 
-## Liens
 
-- Documentation GLPI : https://glpi-project.org/fr/
-- Ressource similaire : https://www.it-connect.fr/tag/glpi/
-- Référence de ce guide : https://docs.ldurand-it.fr/fr/Services/GLPI/glpi

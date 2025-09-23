@@ -35,7 +35,3 @@ Avant de commencer, préparez:
 ![Join Domain - Connexion](../../assets/join-domain/ImageJoinDomain.png)
 
 ---
-
-Liens utiles:
-- https://learn.microsoft.com/fr-fr/windows-server/identity/ad-fs/deployment/join-a-computer-to-a-domain
-- https://fr.wikipedia.org/wiki/Domaine_(Microsoft)

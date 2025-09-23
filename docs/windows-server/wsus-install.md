@@ -79,11 +79,4 @@ Ouvrez l'application Services WSUS et suivez l'assistant:
 
 ---
 
-## Résultat
 
-Vous avez installé et configuré WSUS sur Windows Server 2022. Vous pouvez désormais gérer et distribuer les mises à jour Microsoft dans votre environnement.
-
-Liens utiles:
-- https://learn.microsoft.com/fr-fr/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus
-- https://www.it-connect.fr/chapitres/qu-est-ce-qu-un-serveur-wsus/
-- https://www.it-connect.fr/cours-tutoriels/administration-systemes/windows-server/wsus/
