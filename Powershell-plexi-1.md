@@ -346,3 +346,84 @@ Ce document couvre l'ensemble des attentes d’un administrateur réseau ou d’
 
 [^6]: B2-Act4-TP4-Windows-Core-et-PowerShell.pdf
 
+| Cmdlet | Description |
+| :-- | :-- |
+| Add-ADComputerServiceAccount | Ajoute un ou plusieurs comptes de service à un ordinateur Active Directory. |
+| Add-ADDomainControllerPasswordReplicationPolicy | Ajoute des utilisateurs, ordinateurs et groupes à la liste d'admis/refusés du RODC PRP. |
+| Add-ADFineGrainedPasswordPolicySubject | Applique une politique de mots de passe affinée à utilisateurs et groupes. |
+| Add-ADGroupMember | Ajoute un ou plusieurs membres à un groupe Active Directory. |
+| Add-ADPrincipalGroupMembership | Ajoute un membre à un ou plusieurs groupes Active Directory. |
+| Clear-ADAccountExpiration | Efface la date d'expiration d'un compte Active Directory. |
+| Disable-ADAccount | Désactive un compte Active Directory. |
+| Disable-ADOptionalFeature | Désactive une fonctionnalité facultative Active Directory. |
+| Enable-ADAccount | Active un compte Active Directory. |
+| Enable-ADOptionalFeature | Active une fonctionnalité facultative Active Directory. |
+| Get-ADAccountAuthorizationGroup | Obtient les groupes de sécurité contenant un compte Active Directory. |
+| Get-ADAccountResultantPasswordReplicationPolicy | Donne la politique de mot de passe résultante pour la réplication d'un compte AD. |
+| Get-ADComputer | Donne un ou plusieurs ordinateurs Active Directory. |
+| Get-ADComputerServiceAccount | Donne les comptes de service hébergés par un ordinateur AD. |
+| Get-ADDefaultDomainPasswordPolicy | Donne la politique de mot de passe par défaut d'un domaine AD. |
+| Get-ADDomain | Donne un domaine Active Directory. |
+| Get-ADDomainController | Donne un ou plusieurs contrôleurs de domaine AD. |
+| Get-ADDomainControllerPasswordReplicationPolicy | Donne les membres admis/refusés du PRP RODC. |
+| Get-ADDomainControllerPasswordReplicationPolicyUsage | Donne la politique de mot de passe sur le RODC spécifié. |
+| Get-ADFineGrainedPasswordPolicy | Donne une ou plusieurs politiques de mot de passe affinées. |
+| Get-ADFineGrainedPasswordPolicySubject | Donne les utilisateurs et groupes associés à une politique affinée. |
+| Get-ADForest | Donne une forêt Active Directory. |
+| Get-ADGroup | Donne un ou plusieurs groupes AD. |
+| Get-ADGroupMember | Donne les membres d'un groupe AD. |
+| Get-ADObject | Donne un ou plusieurs objets Active Directory. |
+| Get-ADOptionalFeature | Donne une ou plusieurs fonctionnalités optionnelles AD. |
+| Get-ADOrganizationalUnit | Donne une ou plusieurs unités d'organisation AD. |
+| Get-ADPrincipalGroupMembership | Donne les groupes AD d'un utilisateur, ordinateur ou groupe donné. |
+| Get-ADRootDSE | Donne la racine d'un arbre d'information du contrôleur de domaine. |
+| Get-ADServiceAccount | Donne un ou plusieurs comptes de service AD. |
+| Get-ADUser | Donne un ou plusieurs utilisateurs AD. |
+| Get-ADUserResultantPasswordPolicy | Donne la politique de mot de passe résultante pour un utilisateur. |
+| Install-ADServiceAccount | Installe un compte de service AD sur un ordinateur. |
+| Move-ADDirectoryServer | Déplace un contrôleur de domaine dans AD vers un nouveau site. |
+| Move-ADDirectoryServerOperationMasterRole | Déplace les rôles FSMO vers un contrôleur AD. |
+| Move-ADObject | Déplace un objet AD vers un conteneur ou domaine différent. |
+| New-ADComputer | Crée un nouvel ordinateur AD. |
+| New-ADFineGrainedPasswordPolicy | Crée une stratégie de mot de passe affinée. |
+| New-ADGroup | Crée un groupe AD. |
+| New-ADObject | Crée un objet AD. |
+| New-ADOrganizationalUnit | Crée une unité d'organisation AD. |
+| New-ADServiceAccount | Crée un compte de service AD. |
+| New-ADUser | Crée un nouvel utilisateur AD. |
+| Remove-ADComputer | Supprime un ordinateur AD. |
+| Remove-ADComputerServiceAccount | Supprime un ou plusieurs comptes de service d'un ordinateur. |
+| Remove-ADDomainControllerPasswordReplicationPolicy | Supprime des membres d'une liste PRP RODC. |
+| Remove-ADFineGrainedPasswordPolicy | Supprime une stratégie de mot de passe affinée. |
+| Remove-ADFineGrainedPasswordPolicySubject | Supprime cette politique sur les utilisateurs/groupes. |
+| Remove-ADGroup | Supprime un groupe AD. |
+| Remove-ADGroupMember | Supprime un ou plusieurs membres d'un groupe AD. |
+| Remove-ADObject | Supprime un objet AD. |
+| Remove-ADOrganizationalUnit | Supprime une unité d'organisation AD. |
+| Remove-ADPrincipalGroupMembership | Supprime un membre de groupes AD. |
+| Remove-ADServiceAccount | Supprime un compte de service AD. |
+| Remove-ADUser | Supprime un utilisateur AD. |
+| Rename-ADObject | Change le nom d'un objet AD. |
+| Reset-ADServiceAccountPassword | Réinitialise le mot de passe du compte de service d'un ordinateur. |
+| Restore-ADObject | Restaure un objet AD. |
+| Search-ADAccount | Donne les comptes utilisateur, ordinateur et service AD. |
+| Set-ADAccountControl | Modifie les flags UAC d'un compte AD. |
+| Set-ADAccountExpiration | Définit la date d'expiration d'un compte AD. |
+| Set-ADAccountPassword | Modifie le mot de passe d'un compte AD. |
+| Set-ADComputer | Modifie un ordinateur AD. |
+| Set-ADDefaultDomainPasswordPolicy | Modifie la stratégie de mot de passe par défaut du domaine AD. |
+| Set-ADDomain | Modifie un domaine AD. |
+| Set-ADDomainMode | Définit le niveau fonctionnel du domaine AD. |
+| Set-ADFineGrainedPasswordPolicy | Modifie une politique de mot de passe affinée. |
+| Set-ADForest | Modifie une forêt AD. |
+| Set-ADForestMode | Définit le mode forêt d'une forêt AD. |
+| Set-ADGroup | Modifie un groupe AD. |
+| Set-ADObject | Modifie un objet AD. |
+| Set-ADOrganizationalUnit | Modifie une unité d'organisation AD. |
+| Set-ADServiceAccount | Modifie un compte de service AD. |
+| Set-ADUser | Modifie un utilisateur AD. |
+| Uninstall-ADServiceAccount | Désinstalle un compte de service AD d'un ordinateur. |
+| Unlock-ADAccount | Déverrouille un compte AD. |
+
+
+***
